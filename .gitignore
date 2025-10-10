@@ -1,0 +1,15 @@
+# Node dependencies
+node_modules/
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE / systeem
+.vscode/
+.DS_Store
+
+# Build / cache
+dist/
+build/
