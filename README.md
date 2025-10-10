@@ -29,11 +29,11 @@ De AI Agent (via **Claude API**) analyseert de zin en vertaalt deze naar filters
 
 Deze filters worden automatisch toegepast op de resultaten.
 
-🔹 3. Database
+### 🔹 3. Database
 De accommodaties komen uit een SQL Server-database (via Node.js / Express backend).
 De data wordt opgehaald en gefilterd op basis van de geselecteerde criteria.
 
-🧱 Projectstructuur
+### 🧱 Projectstructuur
 ```
 test-agent/
 ├── css/
@@ -52,7 +52,7 @@ test-agent/
 └── README.md
 ```
 
-⚙️ Installatie & Setup
+### ⚙️ Installatie & Setup
 1️⃣ Vereisten
 Zorg dat je het volgende hebt geïnstalleerd:
 - Node.js (v18 of hoger)
@@ -101,7 +101,7 @@ uvicorn server:app --reload --port 8000
 Nu draait:
 👉 http://localhost:8000/agent-query
 
-🚀 Project starten
+### 🚀 Project starten
 1. Start SQL Server (met de juiste database WintersportDB)
 2. Start Node.js backend:
 ```
@@ -116,7 +116,7 @@ uvicorn server:app --reload --port 8000
 
 
 
-👨‍💻 Auteur
+### 👨‍💻 Auteur
 Luciano Mollen
 📍 Project: AI Wintersport Agent
 🌐 GitHub: LucianoMO101
