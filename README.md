@@ -25,6 +25,7 @@ De AI Agent (via **Claude API**) analyseert de zin en vertaalt deze naar filters
   "prijs": ["Budget"],
   "regio": ["Oostenrijk"]
 }
+```
 
 Deze filters worden automatisch toegepast op de resultaten.
 
@@ -33,6 +34,7 @@ De accommodaties komen uit een SQL Server-database (via Node.js / Express backen
 De data wordt opgehaald en gefilterd op basis van de geselecteerde criteria.
 
 🧱 Projectstructuur
+```
 test-agent/
 ├── css/
 │   └── style.css
@@ -48,6 +50,7 @@ test-agent/
 ├── package.json
 ├── requirements.txt
 └── README.md
+```
 
 ⚙️ Installatie & Setup
 1️⃣ Vereisten
@@ -59,29 +62,41 @@ Zorg dat je het volgende hebt geïnstalleerd:
 - Git
 
 2️⃣ Repository clonen
+```
 git clone https://github.com/LucianoMO101/agent-wintersport-test.git
 cd agent-wintersport-test
+```
 
 3️⃣ Node.js-omgeving opzetten
+```
 npm install
+```
 
 Start daarna de database-server:
+```
 node server.js
+```
 
 Dit draait de Express-API op (Kan je testen met Insomnia):
 👉 http://localhost:3000/accommodaties
 
 4️⃣ Python-omgeving (AI Agent)
 Maak een virtuele omgeving (optioneel maar aanbevolen):
+```
 python3 -m venv venv
 source venv/bin/activate      # macOS / Linux
 venv\Scripts\activate         # Windows
+```
 
 Installeer dependencies:
+```
 pip install -r requirements.txt
+```
 
 Start de FastAPI-server:
+```
 uvicorn server:app --reload --port 8000
+```
 
 Nu draait:
 👉 http://localhost:8000/agent-query
@@ -89,10 +104,14 @@ Nu draait:
 🚀 Project starten
 1. Start SQL Server (met de juiste database WintersportDB)
 2. Start Node.js backend:
-  node server.js
-3. Start Python backend:
-  uvicorn server:app --reload --port 8000
-4. Open index.html in je browser
+```
+node server.js
+```
+4. Start Python backend:
+```
+uvicorn server:app --reload --port 8000
+```
+6. Open index.html in je browser
 (of via Live Server in VS Code)
 
 
