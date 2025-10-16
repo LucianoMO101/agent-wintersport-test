@@ -33,7 +33,7 @@ Deze filters worden automatisch toegepast op de resultaten.
 De accommodaties komen uit een SQL Server-database (via Node.js / Express backend).
 De data wordt opgehaald en gefilterd op basis van de geselecteerde criteria.
 
-###🔑 .env bestand
+### 🔑 .env bestand
 Maak een .env bestand aan in de hoofdmap met je Claude API key:
 ```
 ANTHROPIC_API_KEY=sk-ant-xxxxxxxxxxxxxxxxxxxxxxxxxxxx
